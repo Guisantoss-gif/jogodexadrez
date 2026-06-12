@@ -47,7 +47,7 @@ public class Tabuleiro {
             for (int j = 0; j < 8; j++) {
                 System.out.print("[" + casas[i][j] + "]");
             }
-            System.out.println(); // Pula linha no terminal
+            System.out.println();
         }
     }
 
