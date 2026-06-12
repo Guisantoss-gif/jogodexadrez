@@ -1,10 +1,15 @@
 package main;
 
-public class Peca{ 
+public class Peca {
+  private String nome;
 
-public static void mover(){
+  public Peca(String nome) {
+    this.nome = nome;
+  }
 
-  System.out.println("peca movida fi");
-}
+  public void mover() {
+
+    System.out.println("peca movida fi");
+  }
 
 }

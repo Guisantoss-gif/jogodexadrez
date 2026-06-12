@@ -1,5 +1,8 @@
 package main;
 
-public class Rainha {
+public class Rainha extends Peca {
+    public Rainha(String nome) {
+        super(nome);
+    }
     
 }

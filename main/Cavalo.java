@@ -1,5 +1,8 @@
 package main;
 
-public class Cavalo {
+public class Cavalo extends Peca {
+    public Cavalo(String nome) {
+        super(nome);
+    }
     
 }
