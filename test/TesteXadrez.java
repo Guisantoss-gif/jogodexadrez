@@ -1,40 +1,34 @@
-package test;
 
-import main.Peca;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.jupiter.api.Test;
 
-import main.Tabuleiro; 
-
-import main.Bispo; 
-
-import main.Cavalo;
-
-import main.Peao;
-
-import main.Rainha; 
-
-import main.Rei; 
-
-import main.Torre; 
-public class TesteXadrez {
-    
-    public static void main(String[] args){ 
-        Peca peca = new Peca(); 
-        
-        Tabuleiro tabuleiro = new Tabuleiro(); 
-
-        Bispo bispo = new Bispo();
-        
-        Cavalo cavalo = new Cavalo();
-
-        Peao peao = new Peao(); 
+public class TesteXadrezTest {
+    @Test
+    void verificarCriacaoPecas() {
+       Peca peca = new Peca();
+        assertEquals("A peca foi criada" , getStatus());
        
+        Bispo bispo = new Bispo();
+        assertEquals("O bispo foi criada", getStatus());
+        Cavalo cavalo = new Cavalo();
+        assertEquals("O cavalo foi criado", getStatus());
+        Peao peao = new Peao(); 
+        assertEquals("O peao foi criado", getStatus() );      
         Rainha rainha = new Rainha(); 
-        
+        assertEquals("A rainha foi criada", getStatus());
         Rei rei = new Rei();
-
-        Torre torre = new Torre();
+        assertEquals("O rei foi criado", getStatus());  
+          Torre torre = new Torre();
+         assertEquals("A torre foi criada" , getStatus());
 
          System.out.println("Todos os objetos fora criados com sucesso.");         
  
+
     }
+   
+    @Test
+    void verificarTabuleiro() {
+        Tabuleiro tabuleiro = new Tabuleiro();
+             assertEquals("O Tabuleiro foi criado com sucesso" , getStatus());
+    }    
 }

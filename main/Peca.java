@@ -11,5 +11,7 @@ public class Peca {
 
     System.out.println("peca movida fi");
   }
-
+  public String getStatus(){ 
+    return "A peca foi criada";
+  }
 }
